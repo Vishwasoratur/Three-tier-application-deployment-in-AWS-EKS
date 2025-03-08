@@ -8,18 +8,25 @@ Backend and API: The backend of this application is powered by Go (Golang). It s
 STEPS TO DEPLOY:
 
 DATABASE:
+
 kubectl apply -f mongo-statefulset.yaml
+
 kubectl apply -f mongo-service.yaml
+
 kubectl apply -f mongodb-secret.yaml
 
 Pass the data to the mongodb.
 
 BACKEND:
+
 kubectl apply -f backend-deployment.yaml
+
 kubectl apply -f backend-service.yaml
 
 FRONTEND:
+
 kubectl apply -f frontend-deployment.yaml
+
 kubectl apply -f frontend-service.yaml
 
 
